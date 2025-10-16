@@ -11,10 +11,11 @@ Cluster IPs:
 
 ## Prereq
 
-  apt install git docker build-essential
-  git clone https://github.com/tsimionescu/kube-deployment-training.git
+    apt install git docker build-essential
+    git clone https://github.com/tsimionescu/kube-deployment-training.git
 
 ## Kubectl cheatsheet
-  kubectl create namespace $MY_NAME
-  kubectl apply -f FILE
-  kubectl get pods -n $ MY_NAME
+    
+    kubectl create namespace $MY_NAME
+    kubectl apply -f FILE
+    kubectl get pods -n $ MY_NAME
