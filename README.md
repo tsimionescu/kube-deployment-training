@@ -1,9 +1,9 @@
 # Kubernetes example app
 
-This example shows how to build a simple multi-tier web application using Kubernetes and Docker. It is based on https://github.com/kubernetes/examples/tree/master/web/guestbook-go .
+Acest repository conține exerciții pentru a crea și deploya o aplicație simplă în Kubernetes. Aplicația este bazată pe https://github.com/kubernetes/examples/tree/master/web/guestbook-go .
 
 
-### Links
+### Linkuri
 GitHub repo:
 -  https://github.com/tsimionescu/kube-deployment-training
 
