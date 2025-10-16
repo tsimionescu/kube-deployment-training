@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: guestbook
-  namespace: 
+  namespace: YOUR_NAMEYOUR_NAMEYOUR_NAMEkeysight-tudor
   labels:
     app: guestbook
 spec:
@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: cluster.local/guestbook:
+        image: registry.k8s.io/guestbook:v3
+        imagePullPolicy: Never
         ports:
         - name: http-server
           containerPort: 3000
@@ -28,7 +29,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: guestbook
-  namespace: 
+  namespace: YOUR_NAMEYOUR_NAMEYOUR_NAMEkeysight-tudor
   labels:
     app: guestbook
 spec:

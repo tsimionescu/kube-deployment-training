@@ -16,7 +16,7 @@
 
 # Usage:
 #   [VERSION=v3] [REGISTRY="staging-k8s.gcr.io"] make build
-VERSION?=
+VERSION?=v3
 REGISTRY?=cluster.local
 
 release: clean build clean
