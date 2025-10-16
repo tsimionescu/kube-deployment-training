@@ -16,19 +16,19 @@
 
 # Usage:
 #   [VERSION=v3] [REGISTRY="staging-k8s.gcr.io"] make build
-VERSION?=v3
-REGISTRY?=local
+VERSION?=
+REGISTRY?=cluster.local
 
 release: clean build clean
 
 # builds a docker image that builds the app and packages it into a minimal docker image
 build:
-	docker buildx build --load -t ${REGISTRY}/guestbook:${VERSION} .
-	docker save ${REGISTRY}/guestbook:${VERSION} -o ../my-cont.tar
+	docker buildx build --load -t guestbook:${VERSION} .
+	docker save guestbook:${VERSION} -o ../my-cont.tar
 
 # remove previous images and containers
 clean:
-	docker rm -f ${REGISTRY}/guestbook:${VERSION} 2> /dev/null || true
+	docker rm -f guestbook:${VERSION} 2> /dev/null || true
 	rm -rf ../my-cont.tar
 
 .PHONY: release clean build

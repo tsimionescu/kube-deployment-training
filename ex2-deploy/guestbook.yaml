@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: local/guestbook:v3
+        image: cluster.local/guestbook:
         ports:
         - name: http-server
           containerPort: 3000
