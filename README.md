@@ -4,7 +4,9 @@ This example shows how to build a simple multi-tier web application using Kubern
 
 
 ## Links
-GitHub repo: https://github.com/tsimionescu/kube-deployment-training
+GitHub repo:
+-  https://github.com/tsimionescu/kube-deployment-training
+
 Cluster IPs: 
 - Master: ssh lab@4.165.8.169
 - Workers: http://4.223.137.80, http://20.240.94.5 
